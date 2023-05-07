@@ -18,12 +18,14 @@ public class SmokeTest {
     }
 
     @Test
-    public void openPage() {
+    public void printTitle() {
+        System.out.println(driver.getTitle());
+
         System.out.println("Opened browser " + driver);
     }
 
     @AfterTest
-    public void printTitle() {
-        System.out.println(driver.getTitle());
+    public void teardown() {
+        driver.close();
     }
 }

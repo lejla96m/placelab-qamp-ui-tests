@@ -23,7 +23,7 @@ public class WebDriverSetup {
     }
 
     private static WebDriver getChromeDriver() {
-        WebDriverManager.chromedriver().browserVersion("112.0.5615.138").setup();
+        WebDriverManager.chromedriver().setup();
 
         return new ChromeDriver();
     }

@@ -2,7 +2,7 @@
 
 <suite name="Login test" verbose="1" >
     <parameter name="browser" value="chrome"/>
-    <test name="PL_test" >
+    <test name="Login_test" >
         <classes>
             <class name="com.placelab.tests.LoginTestPositive"/>
         </classes>

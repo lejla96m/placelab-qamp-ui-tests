@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Login test" verbose="1" >
+    <parameter name="browser" value="chrome"/>
+    <test name="Login_test" >
+        <classes>
+            <class name="com.placelab.tests.LoginTests"/>
+            <class name="com.placelab.tests.LoginTestCredentialsNotProvided"/>
+            <class name="com.placelab.tests.LoginTestIncorrectPassword"/>
+            <class name="com.placelab.tests.LoginTestPasswordEmpty"/>
+            <class name="com.placelab.tests.LoginTestInvalidEmail"/>
+        </classes>
+    </test>
+</suite>

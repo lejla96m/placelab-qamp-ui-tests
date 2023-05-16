@@ -24,7 +24,6 @@ public class WebDriverSetup {
 
     private static WebDriver getChromeDriver() {
         WebDriverManager.chromedriver().setup();
-
         return new ChromeDriver();
     }
 }
